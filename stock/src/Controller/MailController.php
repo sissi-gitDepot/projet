@@ -16,8 +16,8 @@ class MailController extends AbstractController
     public function index(MailerInterface $mailer): Response
     {
         $email = (new Email())
-            ->from('antositraka@gmail.com')
-            ->to('antositraka@example.com')
+            ->from('antsositraka@gmail.com')
+            ->to('antsositraka@example.com')
             ->subject('Test de MailDev')
             ->text('Ceci est un mail de test');
         $mailer->send($email);
