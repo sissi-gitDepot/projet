@@ -17,7 +17,7 @@ class MailController extends AbstractController
     {
         $email = (new Email())
             ->from('antositraka@gmail.com')
-            ->to('you@example.com')
+            ->to('antositraka@example.com')
             ->subject('Test de MailDev')
             ->text('Ceci est un mail de test');
         $mailer->send($email);
