@@ -26,17 +26,5 @@ class MailController extends AbstractController
             'controller_name' => 'MailController',
         ]);
     }
-    public function indexssss(MailerInterface $mailer): Response
-    {
-        $email = (new Email())
-            ->from('antsositraka@gmail.com')
-            ->to('antsositraka@example.com')
-            ->subject('Test de MailDev')
-            ->text('Ceci est un mail de test');
-        $mailer->send($email);
-
-        return $this->render('mail/index.html.twig', [
-            'controller_name' => 'MailController',
-        ]);
-    }
+   
 }
