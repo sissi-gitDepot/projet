@@ -26,7 +26,7 @@ class MailController extends AbstractController
             'controller_name' => 'MailController',
         ]);
     }
-    public function indexssss(MailerInterface $mailer): Response
+    public function index3(MailerInterface $mailer): Response
     {
         $email = (new Email())
             ->from('antsositraka@gmail.com')
@@ -39,4 +39,5 @@ class MailController extends AbstractController
             'controller_name' => 'MailController',
         ]);
     }
+   
 }
